@@ -663,18 +663,6 @@ video {
   width: 1rem;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[450px\] {
-  width: 450px;
-}
-
-.w-\[800px\] {
-  width: 800px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -683,24 +671,24 @@ video {
   max-width: 42rem;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-\[800px\] {
-  max-width: 800px;
+.max-w-\[150px\] {
+  max-width: 150px;
 }
 
 .max-w-\[450px\] {
   max-width: 450px;
 }
 
-.max-w-\[150px\] {
-  max-width: 150px;
+.max-w-\[800px\] {
+  max-width: 800px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .cursor-pointer {
@@ -1106,6 +1094,16 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+@media (max-width: 993px) {
+  .max-\[993px\]\:flex {
+    display: flex;
+  }
+
+  .max-\[993px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+}
+
 @media (max-width: 992px) {
   .max-\[992px\]\:visible {
     visibility: visible;
@@ -1114,6 +1112,10 @@ video {
   .max-\[992px\]\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .max-\[992px\]\:flex {
+    display: flex;
   }
 
   .max-\[992px\]\:hidden {
@@ -1126,10 +1128,6 @@ video {
 
   .max-\[992px\]\:items-center {
     align-items: center;
-  }
-
-  .max-\[992px\]\:justify-between {
-    justify-content: space-between;
   }
 
   .max-\[992px\]\:text-center {
@@ -1155,5 +1153,64 @@ video {
 
   .min-\[992px\]\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .min-\[993px\]\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .min-\[993px\]\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .min-\[993px\]\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .min-\[993px\]\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .min-\[993px\]\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .min-\[993px\]\:flex {
+    display: flex;
+  }
+
+  .min-\[993px\]\:items-center {
+    align-items: center;
+  }
+
+  .min-\[993px\]\:justify-center {
+    justify-content: center;
+  }
+
+  .min-\[993px\]\:justify-between {
+    justify-content: space-between;
+  }
+
+  .min-\[993px\]\:gap-1 {
+    gap: 0.25rem;
+  }
+
+  .min-\[993px\]\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .min-\[993px\]\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .min-\[993px\]\:text-center {
+    text-align: center;
   }
 }
