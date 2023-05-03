@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>3-lesson_homework</title>
+  </head>
+  <body class="font-roboto bg-white dark:bg-black">
+    <header class="header py-4 border-b sticky">
+      <div class="container px-4">
+        <div class="row flex justify-between items-center">
+          <div class="header__left gap-5 flex">
+            <a class="flex text-lg" href="#"
+              ><img
+                src="./images/leaf-logo.svg"
+                alt="logo"
+                width="30"
+                height="30"
+              />tailwind <span class="font-bold">components</span></a
+            >
+            <ul class="flex max-[992px]:hidden min-[992px]:block gap-5">
+              <li>
+                <a class="text-slate-400 text-lg drop" href="#">Components</a>
+              </li>
+              <li><a class="text-slate-400 text-lg" href="#">Premium</a></li>
+              <li><a class="text-slate-400 text-lg" href="#">Cheatsheet</a></li>
+              <li>
+                <a class="text-slate-400 text-lg" href="#"
+                  >Gradient generator</a
+                >
+              </li>
+              <li><a class="text-slate-400 text-lg" href="#">Ecosystem</a></li>
+            </ul>
+          </div>
+          <div
+            class="header__right max-[992px]:hidden min-[992px]:visible flex gap-3 items-center"
+          >
+            <a class="text-slate-500" href="#">Blog</a>
+            <label class="block">
+              <input
+                type="text"
+                name="text"
+                class="mt-1 placeholder:text-cyan-500 placeholder:text-lg px-3 py-2 bg-white text-sm border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="search"
+              />
+            </label>
+            <button
+              type="submit  "
+              class="rounded text-sm text-white bg-teal-400 hover:bg-teal-300 px-5 py-3 font-semibold"
+            >
+              Submit
+            </button>
+            <button
+              type="reset"
+              class="px-4 py-2 text-slate-500 rounded hover:bg-slate-200 border"
+            >
+              Login
+            </button>
+            <div
+              class="bg-white dark:bg-slate-800 rounded-lg px-2 ring-1 ring-slate-900/5 shadow-xl"
+            >
+              <div>
+                <span
+                  class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg"
+                >
+                  <svg
+                    class="h-4 w-4 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  ></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-1 max-[992px]:visible min-[992px]:hidden"
+          >
+            <span class="w-4 inline-block bg-gray-600 h-1"></span>
+            <span class="w-4 inline-block bg-gray-600 h-1"></span>
+            <span class="w-4 inline-block bg-gray-600 h-1"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero pb-16">
+        <div class="container pt-7 px-4">
+          <div class="row">
+            <div class="flex justify-between max-[992px]:flex-col">
+              <div class="hero__info">
+                <p class="text-slate-300 mb-2">tailwindcss@3.0.18</p>
+                <span class="flex items-center gap-3"
+                  ><h1 class="text-3xl font-semibold mb-2">
+                    SAAS Landing Page
+                  </h1>
+                  <a
+                    class="hover:underline font-medium text-xl text-slate-400"
+                    href="#"
+                    >By Khatabweda</a
+                  ></span
+                >
+                <p class="text-gray-500 font-medium mb-9">
+                  SAAS Landing Page build with
+                  <span class="text-cyan-400">merakiui.com/</span> Components
+                </p>
+                <div class="btns flex gap-4">
+                  <a
+                    class="flex gap-2 px-3 py-2 border rounded-[8px] text-gray-500 font-medium hover:bg-gray-200"
+                    href="#"
+                    ><img
+                      src="./images/copy.svg"
+                      alt="copy-img"
+                      width="20"
+                      height="20"
+                    />Fork</a
+                  >
+                  <a
+                    class="flex gap-2 px-3 py-2 border rounded-[8px] text-gray-500 font-medium hover:bg-gray-200"
+                    href="#"
+                    ><img
+                      src="./images/love.svg"
+                      alt="copy-img"
+                      width="20"
+                      height="20"
+                    />Favourite</a
+                  >
+                </div>
+              </div>
+              <div class="hero__card max-w-[800px] rounded cursor-pointer">
+                <div class="flex gap-2 mt-7 ms-6 mb-2">
+                  <img
+                    class="rounded-full bg-white"
+                    src="./images/book.svg"
+                    alt="logo"
+                    width="40"
+                    height="40"
+                  />
+                  <img
+                    class="rounded-full bg-white"
+                    src="./images/html.svg"
+                    alt="logo"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <p class="text-sm ms-6 text-white mb-1">
+                  Premium Components Library
+                </p>
+                <p class="text-white mb-4 text-3xl font-semibold ms-6">
+                  Material Yailwind
+                </p>
+                <button
+                  class="rounded-[10px] px-3 py-2 ms-6 mb-5 hover:bg-cyan-400 bg-cyan-500 text-white font-semibold text-center"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="intro pt-16">
+        <div class="container px-4">
+          <div class="row flex justify-center flex-col">
+            <p class="text-3xl font-bold mx-auto max-w-md text-center mb-7">
+              Building Your Next App with our Awesome components
+            </p>
+            <p class="text-gray-500 max-w-md text-center mx-auto mb-7">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+              similique obcaecati illum mollitia.
+            </p>
+            <div class="text-center">
+              <button
+                type="button"
+                class="text-white bg-blue-600 hover:bg-blue-500 rounded font-semibold mb-4 px-3 py-2"
+              >
+                Start 14-day free trial
+              </button>
+              <p class="text-gray-500 text-sm mb-6">No credit card required</p>
+            </div>
+            <img
+              src="./images/hero-bg.jfif"
+              alt="nature-img"
+              class="max-w-full max-[992px]:mx-auto mx-48 max-h-80 mb-24 rounded-xl"
+            />
+            <p class="text-4xl font-semibold mx-auto mb-4">Portfolio</p>
+            <p class="text-gray-500 text-xl mx-auto mb-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At, iste?
+            </p>
+            <div
+              class="cards mb-7 max-[992px]:flex-col max-[992px]:items-center max-[992px]:text-center flex justify-between"
+            >
+              <div class="card max-w-md">
+                <img
+                  class="mb-5 rounded-xl"
+                  src="./images/nature-1.png"
+                  alt="nature"
+                />
+                <p class="font-semibold mb-3 text-2xl">
+                  Best Website Collections
+                </p>
+                <p class="text-blue-500 text-xl">WEBSITE</p>
+              </div>
+              <div class="card max-w-md">
+                <img
+                  class="mb-5 rounded-xl"
+                  src="./images/nature-1.png"
+                  alt="nature"
+                />
+                <p class="font-semibold mb-3 text-2xl">
+                  Block of UI Kit Collections
+                </p>
+                <p class="text-blue-500 text-xl">UI KIT</p>
+              </div>
+              <div class="card max-w-md">
+                <img
+                  class="mb-5 rounded-xl"
+                  src="./images/nature-1.png"
+                  alt="nature"
+                />
+                <p class="font-semibold mb-3 text-2xl">
+                  Ton's of Mobile Mockups
+                </p>
+                <p class="text-blue-500 text-xl">MOCKUPS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team bg-gray-300 pt-5">
+        <div class="container px-4">
+          <div class="row flex justify-center flex-col items-center">
+            <p class="text-3xl font-semibold text-center mb-4">
+              The Executive Team
+            </p>
+            <span
+              class="inline-block max-w-[150px] bg-blue-500 mb-4 h-1"
+            ></span>
+            <p class="text-center max-w-2xl text-gray-600 mb-12">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+              harum repellat molestias doloremque corrupti dolorem accusamus
+              iure eveniet quaerat deserunt.
+            </p>
+            <div
+              class="cards max-[992px]:flex-col max-[992px]:text-center flex gap-12"
+            >
+              <div
+                class="card max-w-[450px] bg-gray-200 border rounded-xl p-3 text-center"
+              >
+                <img class="rounded" src="./images/dddd.avif" alt="humans" />
+                <p class="text-xl font-semibold mt-3">Pamelo Anderson</p>
+                <p class="text-gray-500 mt-3">Land developer</p>
+                <div class="icons flex gap-2 justify-center mt-3">
+                  <svg
+                    class="svg rounded-full hover:fill-blue-600 cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M32,34.934L63.617,10.34C62.984,8.965,61.613,8,60,8H4c-1.613,0-2.984,0.965-3.617,2.34L32,34.934z"
+                      />
+                      <path
+                        d="M34.457,43.156C33.734,43.719,32.867,44,32,44s-1.734-0.281-2.457-0.844L0,20.18V52c0,2.211,1.789,4,4,4h56
+		c2.211,0,4-1.789,4-4V20.18L34.457,43.156z"
+                      />
+                    </g>
+                  </svg>
+
+                  <svg
+                    class="svg rounded-full cursor-pointer hover:fill-blue-600"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M60,20V4c0-2.211-1.789-4-4-4H4C1.789,0,0,1.789,0,4v56c0,2.211,1.789,4,4,4h52c2.211,0,4-1.789,4-4V44
+	c2.211,0,4-1.789,4-4V24C64,21.789,62.211,20,60,20z M56,36H44v-8h12V36z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="hover:fill-blue-600 rounded-full cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60,16H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v12H4
+	c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V20C64,17.789,62.211,16,60,16z M24,8h16v8H24V8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="card max-w-[450px] bg-gray-200 border rounded-xl p-3 text-center"
+              >
+                <img class="rounded" src="./images/dddd2.avif" alt="humans" />
+                <p class="text-xl font-semibold mt-3">Leyla kyuri</p>
+                <p class="text-gray-500 mt-3">Full stack developer</p>
+                <div class="icons flex gap-2 justify-center mt-3">
+                  <svg
+                    class="svg rounded-full hover:fill-blue-600 cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M32,34.934L63.617,10.34C62.984,8.965,61.613,8,60,8H4c-1.613,0-2.984,0.965-3.617,2.34L32,34.934z"
+                      />
+                      <path
+                        d="M34.457,43.156C33.734,43.719,32.867,44,32,44s-1.734-0.281-2.457-0.844L0,20.18V52c0,2.211,1.789,4,4,4h56
+		c2.211,0,4-1.789,4-4V20.18L34.457,43.156z"
+                      />
+                    </g>
+                  </svg>
+
+                  <svg
+                    class="svg rounded-full cursor-pointer hover:fill-blue-600"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M60,20V4c0-2.211-1.789-4-4-4H4C1.789,0,0,1.789,0,4v56c0,2.211,1.789,4,4,4h52c2.211,0,4-1.789,4-4V44
+	c2.211,0,4-1.789,4-4V24C64,21.789,62.211,20,60,20z M56,36H44v-8h12V36z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="hover:fill-blue-600 rounded-full cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60,16H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v12H4
+	c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V20C64,17.789,62.211,16,60,16z M24,8h16v8H24V8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="card max-w-[450px] bg-gray-200 border rounded-xl p-3 text-center"
+              >
+                <img class="rounded" src="./images/dddd3.avif" alt="humans" />
+                <p class="text-xl font-semibold mt-3">Artur Melo</p>
+                <p class="text-gray-500 mt-3">design director</p>
+                <div class="icons flex gap-2 justify-center mt-3">
+                  <svg
+                    class="svg rounded-full hover:fill-blue-600 cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M32,34.934L63.617,10.34C62.984,8.965,61.613,8,60,8H4c-1.613,0-2.984,0.965-3.617,2.34L32,34.934z"
+                      />
+                      <path
+                        d="M34.457,43.156C33.734,43.719,32.867,44,32,44s-1.734-0.281-2.457-0.844L0,20.18V52c0,2.211,1.789,4,4,4h56
+		c2.211,0,4-1.789,4-4V20.18L34.457,43.156z"
+                      />
+                    </g>
+                  </svg>
+
+                  <svg
+                    class="svg rounded-full cursor-pointer hover:fill-blue-600"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M60,20V4c0-2.211-1.789-4-4-4H4C1.789,0,0,1.789,0,4v56c0,2.211,1.789,4,4,4h52c2.211,0,4-1.789,4-4V44
+	c2.211,0,4-1.789,4-4V24C64,21.789,62.211,20,60,20z M56,36H44v-8h12V36z"
+                    />
+                  </svg>
+
+                  <svg
+                    class="hover:fill-blue-600 rounded-full cursor-pointer"
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 64 64"
+                    enable-background="new 0 0 64 64"
+                    xml:space="preserve"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M60,16H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v12H4
+	c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V20C64,17.789,62.211,16,60,16z M24,8h16v8H24V8z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
